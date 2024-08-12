@@ -974,6 +974,9 @@ main {
   opacity: 0;
   z-index: 1;
   transition: var(--transition-1);
+
+  padding-left:  100px;
+  padding-right: 100px;
 }
 
 .project-item > a:hover .project-item-icon-box {
