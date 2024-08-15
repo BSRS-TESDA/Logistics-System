@@ -45,24 +45,20 @@
                     </div>
                     <div class="portal__wrapper__form__wrapper__field">
                         <div class="portal__wrapper__form__wrapper__field__input">
-                            <input type="text" id="studno" class="js-input">
-                            <label for="studno">Username</label>
+                            <input type="text" id="username" class="js-input">
+                            <label for="username">Username</label>
                         </div>
                         <div class="portal__wrapper__form__wrapper__field__input">
-                            <input type="password" id="acode" class="js-input js-pass">
-                            <label for="acode">Password</label>
+                            <input type="password" id="password" class="js-input js-pass">
+                            <label for="password">Password</label>
                             <img id="show-hide-pass" src="assets/showPass.svg" alt="">
                             <a href="#" id="forgot-pass">Forgot Password?</a>
                         </div>
-                        <div class="portal__wrapper__form__wrapper__field__input">
-                            <input type="text" id="captcha" class="js-input" >
-                            <label for="captcha">Antibot Validation</label>
-                            <img id="captcha-img" src="assets/captcha.jpg" alt="">
-                        </div>
                         <div class="portal__wrapper__form__wrapper__field__button">
-                            <button><a style="color: white;" href="./employee-management-frontend/src/index.html">Sign in?</a></button>
+                            <button id="login-button" type="button">Sign in</button>
                         </div>
                         <p id="terms">By using this service, you understand and agree to the SmartLogix <a href="#">Terms of Use</a> and <a href="#">Privacy Statement</a>.</p>
+                        <p id="error-message" style="color: red; display: none;">Invalid username or password.</p>
                     </div>
                 </div>
             </form>
@@ -72,4 +68,6 @@
         </div>
     </div>
 </body>
+
 </html>
+
