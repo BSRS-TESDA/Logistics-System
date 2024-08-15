@@ -53,8 +53,39 @@ loginButton.addEventListener('click', () => {
     const enteredPassword = passwordInput.value;
 
     if(enteredUsername === validUsername && enteredPassword === validPassword) {
-        window.location.href = "./employee-management-frontend/src/index.html";
+        window.location.href = "./Landing Page";
     } else {
         errorMessage.style.display = "block";
+    }
+});
+
+
+loginButton.addEventListener('click', () => {
+    const enteredUsername = usernameInput.value;
+    const enteredPassword = passwordInput.value;
+
+    if(enteredUsername === validUsername && enteredPassword === validPassword) {
+        alert("Login successful! Redirecting to the landing page...");
+        window.location.href = "./Landing Page";
+    } else {
+        errorMessage.style.display = "block";
+    }
+});
+
+const successMessage = document.querySelector('#success-message');
+
+loginButton.addEventListener('click', () => {
+    const enteredUsername = usernameInput.value;
+    const enteredPassword = passwordInput.value;
+
+    if(enteredUsername === validUsername && enteredPassword === validPassword) {
+        successMessage.style.display = "block";
+        errorMessage.style.display = "none";
+        setTimeout(() => {
+            window.location.href = "./Landing Page";
+        }, 2000); // Redirect after 2 seconds
+    } else {
+        errorMessage.style.display = "block";
+        successMessage.style.display = "none";
     }
 });

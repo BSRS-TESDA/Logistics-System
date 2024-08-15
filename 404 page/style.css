@@ -1,56 +1,59 @@
-html, body{
+html, body {
   margin: 0;
   padding: 0;
   text-align: center;
   font-family: sans-serif;
-  background-color: #E7FFFF;
+  background-color: #1A1A1A; /* Dark background */
+  color: #32CD32; /* Bright green text color */
 }
 
-h1, a{
+h1, a {
   margin: 0;
   padding: 0;
   text-decoration: none;
+  color: #32CD32; /* Bright green for headings and links */
 }
 
-.section{
+.section {
   padding: 4rem 2rem;
 }
 
-.section .error{
+.section .error {
   font-size: 150px;
-  color: #008B62;
+  color: #32CD32; /* Bright green for the error text */
   text-shadow: 
-    1px 1px 1px #00593E,    
-    2px 2px 1px #00593E,
-    3px 3px 1px #00593E,
-    4px 4px 1px #00593E,
-    5px 5px 1px #00593E,
-    6px 6px 1px #00593E,
-    7px 7px 1px #00593E,
-    8px 8px 1px #00593E,
-    25px 25px 8px rgba(0,0,0, 0.2);
+    1px 1px 1px #228B22,    /* Darker green shadow */
+    2px 2px 1px #228B22,
+    3px 3px 1px #228B22,
+    4px 4px 1px #228B22,
+    5px 5px 1px #228B22,
+    6px 6px 1px #228B22,
+    7px 7px 1px #228B22,
+    8px 8px 1px #228B22,
+    25px 25px 8px rgba(0, 0, 0, 0.2);
 }
 
-.page{
+.page {
   margin: 2rem 0;
   font-size: 20px;
   font-weight: 600;
-  color: #444;
+  color: #CCCCCC; /* Light gray color for additional text */
 }
 
-.back-home{
+.back-home {
   display: inline-block;
-  border: 2px solid #222;
-  color: #fff;
+  border: 2px solid #32CD32; /* Bright green border */
+  color: #1A1A1A; /* Dark background with green text on the button */
   text-transform: uppercase;
   font-weight: 600;
   padding: 0.75rem 1rem 0.6rem;
   transition: all 0.2s linear;
-  box-shadow: 0 15px 15px -11px rgba(0,0,0, 0.4);
-  background: #222;
+  box-shadow: 0 15px 15px -11px rgba(0, 0, 0, 0.4);
+  background: #32CD32; /* Bright green background for the button */
   border-radius: 6px;
 }
-.back-home:hover{
-  background: #222;
-  color: #ddd;
+
+.back-home:hover {
+  background: #228B22; /* Darker green on hover */
+  color: #1A1A1A; /* Dark text on hover */
 }
